@@ -20,7 +20,7 @@ img {
 }
 
 input {
-    color: #372305;
+    color: #75472F;
     background-color: #A8A996;
     border: 0;
     padding: 15px;
@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-    background-color: #C28767;
+    background-color: #75472F;
     cursor: pointer;
 }
 
@@ -67,7 +67,8 @@ ul li {
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    color: #75472F;
 }
 
 ul li:hover {
