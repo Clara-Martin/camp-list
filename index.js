@@ -7,45 +7,45 @@ const appSettings = {
 
 const app = initializeApp(appSettings)
 const database = getDatabase(app)
-const shoppingListInDB = ref(database, "campsites")
+const campingListInDB = ref(database, "campsites")
 
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
-const shoppingListEl = document.getElementById("shopping-list")
+const campingListEl = document.getElementById("camp-list")
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
     
-    push(shoppingListInDB, inputValue)
+    push(campingListInDB, inputValue)
     
     clearInputFieldEl()
 })
 
-onValue(shoppingListInDB, function(snapshot) {
+onValue(campingListInDB, function(snapshot) {
     if (snapshot.exists()) {
         let itemsArray = Object.entries(snapshot.val())
     
-        clearShoppingListEl()
+        clearCampingListEl()
         
         for (let i = 0; i < itemsArray.length; i++) {
             let currentItem = itemsArray[i]
             
-            appendItemToShoppingListEl(currentItem)
+            appendItemToCampingListEl(currentItem)
         }    
     } else {
-        shoppingListEl.innerHTML = "No items here... yet"
+        campingListEl.innerHTML = "No items here... yet"
     }
 })
 
-function clearShoppingListEl() {
-    shoppingListEl.innerHTML = ""
+function clearCampingListEl() {
+    campingListEl.innerHTML = ""
 }
 
 function clearInputFieldEl() {
     inputFieldEl.value = ""
 }
 
-function appendItemToShoppingListEl(item) {
+function appendItemToCampingListEl(item) {
     let itemID = item[0]
     let itemValue = item[1]
     
@@ -59,5 +59,5 @@ function appendItemToShoppingListEl(item) {
         remove(exactLocationOfItemInDB)
     })
     
-    shoppingListEl.append(newEl)
+    campingListEl.append(newEl)
 }
