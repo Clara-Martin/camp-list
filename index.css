@@ -32,7 +32,7 @@ input {
 }
 
 input::placeholder {
-    color: white;
+    color: #EFDDCA;
 }
 
 button {
