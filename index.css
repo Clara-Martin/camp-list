@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    background-color: #BEB9A6;
     color: #432000;
     user-select: none;
 }
@@ -20,8 +20,8 @@ img {
 }
 
 input {
-    color: #432000;
-    background-color: #DCE1EB;
+    color: #372305;
+    background-color: #FFE8D6;
     border: 0;
     padding: 15px;
     border-radius: 8px;
@@ -31,9 +31,13 @@ input {
     margin: 10px 0;
 }
 
+input::placeholder {
+    color: white;
+}
+
 button {
     color: #FDFDFD;
-    background-color: #AC485A;
+    background-color: #CB997E;
     border: 0;
     padding: 15px;
     border-radius: 8px;
