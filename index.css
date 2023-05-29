@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #BEB9A6;
+    background-color: #6B705C;
     color: #432000;
     user-select: none;
 }
@@ -21,7 +21,7 @@ img {
 
 input {
     color: #372305;
-    background-color: #FFE8D6;
+    background-color: #A8A996;
     border: 0;
     padding: 15px;
     border-radius: 8px;
