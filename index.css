@@ -61,7 +61,7 @@ ul {
 
 ul li {
     font-size: 20px;
-    background-color: #ffe8d6;
+    background-color: #DDBEA9;
     padding: 15px;
     border-radius: 8px;
     flex-grow: 1;
@@ -70,6 +70,6 @@ ul li {
 }
 
 ul li:hover {
-    background-color: #DDBEA9;
+    background-color: #cb997e;
     cursor: pointer;
 }
